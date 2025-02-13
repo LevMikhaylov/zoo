@@ -12,7 +12,8 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
         Zoo zoo = context.getBean(Zoo.class);
-        zoo.displayFavoriteAnimalSound();
+        zoo.displayAnimalSounds();
+		zoo.displayFavoriteAnimalSound();
 	}
 
 }
