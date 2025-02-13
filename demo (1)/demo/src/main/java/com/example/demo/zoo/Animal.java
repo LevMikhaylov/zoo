@@ -1,6 +1,6 @@
 package com.example.demo.zoo;
 
 public interface Animal {
-    String makeSound();
+    void makeSound();
     String getName();
 }
