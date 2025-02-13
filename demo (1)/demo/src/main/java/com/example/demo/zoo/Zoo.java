@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 public class Zoo {
     private List<Animal> animals;
     private Animal favoriteAnimal;
-    @Autowired
     public Zoo(List<Animal> animals, @Qualifier("duck") Animal favoriteAnimal) {
         this.animals = animals;
         this.favoriteAnimal = favoriteAnimal;
