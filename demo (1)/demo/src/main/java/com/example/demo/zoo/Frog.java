@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Frog implements Animal{
     @Override
-    public String makeSound(){
-        return "Ква-ква!";
+    public void makeSound(){
+        System.out.println("Ква-ква!");
     }
     @Value("${frog.name}")
     private String name;
